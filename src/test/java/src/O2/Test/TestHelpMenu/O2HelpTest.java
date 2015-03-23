@@ -53,13 +53,13 @@ public class O2HelpTest {
         Assert.assertEquals(actualelementsInList, expectedHelpelements);
 
         test_functionObject.clickOnContactUs();
-        test_functionObject.clickOnTechnicalQusetionsButton();
-        test_functionObject.selectPreferToSpeakSomeone();
+
 
     }
 
     @Test(priority=1)
     public void verifyOprnTimingsTable(){
+
 
         //Creating List of Expected values in open timings table
         List<String> expectedTableElements = new ArrayList<String>();
@@ -69,6 +69,9 @@ public class O2HelpTest {
         expectedTableElements.add("08:00 - 20:00");
         expectedTableElements.add("Sunday");
         expectedTableElements.add("09:00 - 18:00");
+
+        test_functionObject.clickOnTechnicalQusetionsButton();
+        test_functionObject.selectPreferToSpeakSomeone();
 
         test_functionObject.clickPayAndGo();
 
